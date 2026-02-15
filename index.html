@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CineFlow Creator Registration</title>
+  </head>
+  <body>
+    <header>
+      <h1>Join the CineFlow Creator Program</h1>
+    </header>
+
+    <main>
+      <section id="promo">
+        <h2>Welcome Video</h2>
+        <video controls width="200" height="100">Welcome video
+          <source src="Welcome Video.mp4" />
+          <source src="Welcome Video.webm" />
+        </video>
+      </section>
+
+      <section id="registration">
+        <form
+          action="/submit-registration"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Isaac Rock"
+            /><br />
+            <label for="emali">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="john@gmail.com"
+            /><br />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              minlength="6"
+              placeholder="123456"
+            /><br />
+            <label for="date">Date</label>
+            <input
+              type="date"
+              name="Birthdate"
+              id="date"
+              required
+              min="18"
+            /><br />
+            <label for="range">Expected Weekly Upload Volume</label>
+            <input
+              type="range"
+              name="Weekly upload volume of videos"
+              id="range"
+              required
+              min="0"
+              max="10"
+            /><br />
+            <label for="profilepic">Upload Profile Picture</label>
+            <input
+              type="file"
+              name="profilepic"
+              id="profilepic"
+              accept="image/jpeg,image/png"
+            /><br />
+            <label for="content genres">Gaming</label>
+            <input type="checkbox" name="genre" id="content genre" />
+            <label for="content genres">Fashion</label>
+            <input type="checkbox" name="genre" id="content genre" />
+            <label for="content genres">Dancing</label>
+            <input type="checkbox" name="genre" id="content genre" />
+            <label for="content genres">Sports</label>
+            <input type="checkbox" name="genre" id="content genre" />
+            <label for="content genres">Memes</label>
+            <input type="checkbox" name="genre" id="content genre" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Channel Details</legend>
+            <p><i>Listen to the following audio for successful content creation.</i></p>
+            <audio  controls src="How to make successful content.mp3"></audio>
+            <p><i>Your account should have a welcome video in order to acknowledge your audience on your type of creation <br>Such as below: </i></p>
+            <video controls width="500" height="500">
+                <source src="Welcome to My Channel  Matthew McConaughey.mp4">Welcome video
+            </video>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit">Register Account</button>
+            <button type="reset">Clear Form</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
