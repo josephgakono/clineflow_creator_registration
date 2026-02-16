@@ -1,4 +1,5 @@
  #content creators registration
+ <br>
 This webpage contains a form for registration and instructions for a good webpage.
 <br>
 It also contains an example video which each creator should create for their channel.
